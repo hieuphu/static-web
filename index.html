@@ -1,75 +1,42 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+	<title>Bài Thu Hoạch</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
-                </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
-
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
-
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
-
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
-
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
+<div class="main-contain">
+	<article class="tin">
+		<a class="link-image" href="https://vi.wikipedia.org/wiki/The_Chainsmokers"><img class="hinh" src="https://static.billboard.com/files/media/The-Chainsmokers-Press-Pic-NEW-2019-cr-Danilo-Lewis-billboard-1548-compressed.jpg"></a>
+		<h3>NEW</h3>
+		<a class="link-new" href="https://vi.wikipedia.org/wiki/The_Chainsmokers">Tiểu sử về bộ đôi đình đám trong giới US The Chainsmokers</a>
+		<p>Ngay khi được ra mắt vào năm 2016, The Chainsmokers đã luôn chú ý được sự quan tâm của hàng triệu người hâm mộ</p>
+	</article>
+	<article class="tin">
+		<div class="khoi-tin-phu">
+			<a href="https://kenh14.vn/la-sieu-sao-quoc-te-nhung-the-chainsmokers-van-sieu-than-thien-om-cham-lay-fan-viet-trong-buoi-mg-20170915105310399.chn"><img class="hinh" src="https://kenh14cdn.com/2017/img-2082-1505446934819.jpg"></a>
+			<a class="link-new" href="https://kenh14.vn/la-sieu-sao-quoc-te-nhung-the-chainsmokers-van-sieu-than-thien-om-cham-lay-fan-viet-trong-buoi-mg-20170915105310399.chn">Là siêu sao quốc tế, nhưng The Chainsmokers vẫn siêu thân thiện, ôm chầm lấy fan Việt trong buổi M&G</a>
+			<p>1 giờ trước</p>
+		</div>
+		<div class="khoi-tin-phu">
+			<a href="https://kenh14.vn/la-sieu-sao-quoc-te-nhung-the-chainsmokers-van-sieu-than-thien-om-cham-lay-fan-viet-trong-buoi-mg-20170915105310399.chn"><img class="hinh" src="https://kenh14cdn.com/2017/img-2082-1505446934819.jpg"></a>
+			<a class="link-new" href="https://kenh14.vn/la-sieu-sao-quoc-te-nhung-the-chainsmokers-van-sieu-than-thien-om-cham-lay-fan-viet-trong-buoi-mg-20170915105310399.chn">Là siêu sao quốc tế, nhưng The Chainsmokers vẫn siêu thân thiện, ôm chầm lấy fan Việt trong buổi M&G</a>
+			<p>1 giờ trước</p>
+		</div>
+		<div class="khoi-tin-phu">
+			<a href="https://kenh14.vn/la-sieu-sao-quoc-te-nhung-the-chainsmokers-van-sieu-than-thien-om-cham-lay-fan-viet-trong-buoi-mg-20170915105310399.chn"><img class="hinh" src="https://kenh14cdn.com/2017/img-2082-1505446934819.jpg"></a>
+			<a class="link-new" href="https://kenh14.vn/la-sieu-sao-quoc-te-nhung-the-chainsmokers-van-sieu-than-thien-om-cham-lay-fan-viet-trong-buoi-mg-20170915105310399.chn">Là siêu sao quốc tế, nhưng The Chainsmokers vẫn siêu thân thiện, ôm chầm lấy fan Việt trong buổi M&G</a>
+			<p>1 giờ trước</p>
+		</div>
+		</div>
+	</article>
+	<article class="tin">
+		<div class="tieu-de">VIDEO ÂM NHẠC NỔI BẬT</div>
+		<div class="video-youtube">
+			<iframe width="700" height="570" src="https://www.nhaccuatui.com/video/sick-boy-the-chainsmokers.wdZNKgDYc44vZ.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</article>
+</div>
 </body>
-
 </html>
